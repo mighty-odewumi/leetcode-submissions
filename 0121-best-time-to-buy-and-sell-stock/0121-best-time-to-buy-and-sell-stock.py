@@ -55,7 +55,7 @@ class Solution:
         if prices[i] < cheapest:
             cheapest = prices[i]
         
-        if prices[i] > cheapest:
+        else:
             currentProfit = prices[i] - cheapest
             maxProfit = max(maxProfit, currentProfit)
     return maxProfit
