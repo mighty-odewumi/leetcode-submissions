@@ -21,8 +21,5 @@ class Solution:
         while newCount < count:
             newCount += 1
             current = current.next
-            # print("[", end="")
             if newCount >= mid:
-                # if (current.next != None):
-                print(current.val, end=",")
                 return current
