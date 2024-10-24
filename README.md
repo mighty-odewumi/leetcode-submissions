@@ -14,4 +14,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0121-best-time-to-buy-and-sell-stock) |
+## Linked List
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0206-reverse-linked-list) |
+## Recursion
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
