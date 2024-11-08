@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0001-two-sum) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0136-single-number](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0136-single-number) |
+| [0137-single-number-ii](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0137-single-number-ii) |
 | [0859-design-circular-deque](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0859-design-circular-deque) |
 ## Hash Table
 |  |
@@ -42,4 +43,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0136-single-number](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0136-single-number) |
+| [0137-single-number-ii](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0137-single-number-ii) |
 <!---LeetCode Topics End-->
