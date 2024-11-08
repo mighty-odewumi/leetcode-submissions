@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0001-two-sum) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0859-design-circular-deque](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0859-design-circular-deque) |
 ## Hash Table
 |  |
 | ------- |
@@ -18,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0206-reverse-linked-list](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0206-reverse-linked-list) |
+| [0859-design-circular-deque](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0859-design-circular-deque) |
 | [0908-middle-of-the-linked-list](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0908-middle-of-the-linked-list) |
 ## Recursion
 |  |
@@ -27,4 +29,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0908-middle-of-the-linked-list](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0908-middle-of-the-linked-list) |
+## Design
+|  |
+| ------- |
+| [0859-design-circular-deque](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0859-design-circular-deque) |
+## Queue
+|  |
+| ------- |
+| [0859-design-circular-deque](https://github.com/mighty-odewumi/leetcode-submissions/tree/master/0859-design-circular-deque) |
 <!---LeetCode Topics End-->
