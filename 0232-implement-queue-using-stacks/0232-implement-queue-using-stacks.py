@@ -1,5 +1,11 @@
 class MyQueue:
 
+    # New solution uses the two stacks as mandated by the problem. 
+    # Even tho, my first solution was correct and passed and 
+    # those are the commented out code for each function.
+    # This new solution is from a post giving the guides in the Discussions.
+    # I also figured out a bug in my code from the amortized Wikipedia page.
+    # Honestly, I still don't understand why we need this. Might revisit later.
     def __init__(self):
         # self.queue = []
         self.stack1 = []
@@ -20,8 +26,8 @@ class MyQueue:
 
     def peek(self) -> int:
         # if len(self.queue) == 0: return -1
-        # else: 
-        #     return self.queue[0]
+        # else: return self.queue[0]
+
         if len(self.stack2) == 0: 
             while self.stack1:
                 self.stack2.append(self.stack1.pop())
