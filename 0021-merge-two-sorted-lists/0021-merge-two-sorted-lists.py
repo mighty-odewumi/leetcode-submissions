@@ -4,11 +4,35 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    # I don't know how but my code works after so many hours of trial and error!!!
-    # Hahahaha
-    # O(n**2) Time Complexity and O(1) space complexity! :(
-    # Off to the Discussions. 
+   
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        # O(n) Time complexity solution from NeetCode
+        dummy = ListNode()
+        tail = dummy
+
+        while list1 and list2:
+            if list1.val < list2.val:
+                tail.next = list1
+                list1 = list1.next
+            else:
+                tail.next = list2
+                list2 = list2.next
+            tail = tail.next
+
+        if list1:
+            tail.next = list1
+        elif list2: 
+            tail.next = list2
+            
+        return dummy.next
+
+        
+        # My initial implementation!
+        # I don't know how but my code works after so many hours of trial and error!!!
+        # Hahahaha
+        # O(n**2) Time Complexity and O(1) space complexity! :(
+        # Off to the Discussions. 
+        """
         head1 = list1
         head2 = list2
         node = None
@@ -50,3 +74,4 @@ class Solution:
         
         sortLinkedList(head1)
         return head1
+        """
