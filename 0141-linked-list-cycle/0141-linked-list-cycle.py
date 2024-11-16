@@ -3,7 +3,8 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-# check if node is not in hashmap
+
+# For hashmap solution having both O(n) time and space complexities
 """
 While next node is not in hashmap
 Add node to hashmap
@@ -12,13 +13,16 @@ return false, meaning there's no cycle
 update pointer outside if else
 
 once we break out of while, return true, there's cycle
+"""
 
+# For Two pointers or Tortoise Hare O(n) for time complexity and O(1) for space complexity
+"""
 initialize two pointers at head
-while pointerB.next.next != pointerA
-if B.next.next == None or A.next == None: return False
+while pointerB and pointerA are valid
 increase the traversal by 1 for A and 2 for B
+inside loop, check if both A and B are equal: return True
 
-breaking, return True
+else after loop is invalid, return False
 """
 
 class Solution:
@@ -38,9 +42,9 @@ class Solution:
         pointerA = head
         pointerB = head
 
+        # We might need to handle this if we don't have a value given.
         # if head == None: return False
-        # if head.next == None or pointerB.next.next == None: return False
-
+        
         while pointerB and pointerA and pointerB.next:  # Included the pointerB.next as loop codition to fix the error 
             # popping up about pointerB.next.next below.
             pointerA = pointerA.next
