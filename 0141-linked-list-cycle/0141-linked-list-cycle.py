@@ -12,26 +12,39 @@ return false, meaning there's no cycle
 update pointer outside if else
 
 once we break out of while, return true, there's cycle
-we could use a flag to store our truthy state
+
+initialize two pointers at head
+while pointerB.next.next != pointerA
+if B.next.next == None or A.next == None: return False
+increase the traversal by 1 for A and 2 for B
+
+breaking, return True
 """
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
-        # while head.next:
-        #     print(head)
-        #     head = head.next
+        # hashmap = {}
 
-        # if head.next != None: 
-        #     return True
-        # else: return False
-        hashmap = {}
+        # if head == None: return False
+
+        # while head.next not in hashmap:
+        #     hashmap[head.next] = head.val
+        #     if head.next == None: 
+        #         return False
+        #     head = head.next
+        
+        # return True
+
+        pointerA = head
+        pointerB = head
 
         if head == None: return False
+        if head.next == None or pointerB.next.next == None: return False
 
-        while head.next not in hashmap:
-            hashmap[head.next] = head.val
-            if head.next == None: 
-                return False
-            head = head.next
+        while pointerB and pointerA and pointerB.next:
+            pointerA = pointerA.next
+            pointerB = pointerB.next.next
         
-        return True
+            if pointerB == pointerA: return True
+        return False
+
