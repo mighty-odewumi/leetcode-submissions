@@ -38,10 +38,11 @@ class Solution:
         pointerA = head
         pointerB = head
 
-        if head == None: return False
-        if head.next == None or pointerB.next.next == None: return False
+        # if head == None: return False
+        # if head.next == None or pointerB.next.next == None: return False
 
-        while pointerB and pointerA and pointerB.next:
+        while pointerB and pointerA and pointerB.next:  # Included the pointerB.next as loop codition to fix the error 
+            # popping up about pointerB.next.next below.
             pointerA = pointerA.next
             pointerB = pointerB.next.next
         
