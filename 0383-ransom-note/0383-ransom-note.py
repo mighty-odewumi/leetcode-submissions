@@ -4,23 +4,21 @@ class Solution:
     """
     Get count of each string
     Iterate and get value of letter in ransomNote count
-    and save letter picked to global variable
     Get value of letter picked in magazine count
-    If value doesn't exist in magazine, return false
-    Compare if they are equal.
-    If equal, return true, else return false
+    If total number of letter in ransom map is less than or equal to magazine, 
+    Append to list as false
+    Else append to list as true
+    Finally return whether the list contains totally true or false.
     """
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
         ransomCount = Counter(ransomNote)
         magCount = Counter(magazine)
-        isRansom = []
+        isRansom = set()
 
         for char in ransomNote:
-            # magVal = magCount[char]
-            # if magVal == 0: return False
             if ransomCount[char] <= magCount[char]:
-                isRansom.append(True)
+                isRansom.add(True)
             else: 
-                isRansom.append(False)
+                isRansom.add(False)
 
         return all(isRansom)
