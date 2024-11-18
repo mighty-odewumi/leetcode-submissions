@@ -13,24 +13,14 @@ class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
         ransomCount = Counter(ransomNote)
         magCount = Counter(magazine)
-        isRansom = False
-        ran = []
+        isRansom = []
 
         for char in ransomNote:
             # magVal = magCount[char]
             # if magVal == 0: return False
             if ransomCount[char] <= magCount[char]:
-                # isRansom = True 
-                ran.append(True)
-                # return True
-            # elif char in magazine and ransomCount[char] != magCount[char]:
-            #     return False
+                isRansom.append(True)
             else: 
-                # isRansom = False
-                # return False
-                ran.append(False)
+                isRansom.append(False)
 
-            # if ransomCount[char] == magVal: return True
-            # elif ransomeCount[char] != magVal and char in magazine: 
-            #     return False
-        return all(ran)
+        return all(isRansom)
