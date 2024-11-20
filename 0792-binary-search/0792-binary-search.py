@@ -1,12 +1,14 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         # First attempt using an inefficient method.
+        """
         if target in nums: return nums.index(target)
         else: return -1
+        """
 
         # Efficient Binary Search
-        # low = 0
-        # high = len(nums) - 1
+        low = 0
+        high = len(nums) - 1
 
         # Iterative method
         """
@@ -22,7 +24,6 @@ class Solution:
         """
 
         # Recursive Method
-        """
         def binarySearch(nums, low, high):
 
             mid = (low + high) // 2
@@ -33,4 +34,3 @@ class Solution:
             elif target < nums[mid]: return binarySearch(nums, low, mid - 1)
 
         return binarySearch(nums, low, high)
-        """
